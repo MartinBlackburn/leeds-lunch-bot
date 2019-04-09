@@ -26,32 +26,49 @@ fetch('data/places.json')
 });
 
 // elements
-let placesElement = document.getElementsByClassName("js-places")[0];
-let buttonAllElement = document.getElementsByClassName("js-buttonAll")[0];
+const elements = {
+    placesList: document.querySelector(".js-places"),
+    buttonAll: document.querySelector(".js-buttonAll"),
+    buttonRandom: document.querySelector(".js-buttonRandom"),
+}
 
 // event listeners
-buttonAllElement.addEventListener("click", showAll, false);
+elements.buttonAll.addEventListener("click", showAll, false);
+elements.buttonRandom.addEventListener("click", showRandom, false);
 
 
 /** 
  * Show all the places
  */
 function showAll() {
-    clearPlaces();
     renderPlaces(allPlaces);
+}
+
+/** 
+ * Show a random place out of all the places
+ */
+function showRandom() {
+    let place = [];
+    let randomPlace = allPlaces[Math.floor(Math.random() * allPlaces.length)];
+    
+    place.push(randomPlace);
+    
+    renderPlaces(place);
 }
 
 /**
  * Clear all the places from the list
  */
 function clearPlaces() {
-    placesElement.innerHTML = "";
+    elements.placesList.innerHTML = "";
 }
 
 /**
  * Render the given places into the list
  */
 function renderPlaces(places) {
+    clearPlaces();
+    
     // loop over the places
     places.forEach((place) => {
         // get place template
@@ -69,6 +86,6 @@ function renderPlaces(places) {
         priceRangeElement.innerHTML = place.priceRange;
         
         // attach the template
-        placesElement.appendChild(placeTemplate);
+        elements.placesList.appendChild(placeTemplate);
     });
 }
