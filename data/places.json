@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Greggs",
+        "description": "Cheap tastey food, but you'll be hungry again in an hour",
+        "priceRange": "£",
+        "offers": {
+            "monday": "more sausage rolls"
+        }
+    },
+    {
+        "name": "Blackhouse",
+        "description": "Steak! Enough said!",
+        "priceRange": "£££"
+    }
+]

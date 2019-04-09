@@ -1,0 +1,23 @@
+.button {
+    padding: 8px 16px;
+    border: 0;
+    
+    background: #5cbcf6;
+    
+    font-size: 1em;
+    line-height: 1em;
+    color: white;
+    
+    transition: 0.2s background ease;
+    
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #52a6da;
+}
+
+.button:active,
+.button:focus {
+    outline: 0;
+}
