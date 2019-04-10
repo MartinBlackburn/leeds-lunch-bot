@@ -1,5 +1,13 @@
 [
     {
+        "name": "Absurd bird",
+        "description": "Fried chicken, waffels and burgers",
+        "priceRange": "££",
+        "offers": {
+            "everyday": "10% staff discount"
+        }
+    },
+    {
         "name": "Almost famous",
         "description": "Amazing burgers, nom nom",
         "priceRange": "££",
@@ -15,7 +23,7 @@
     {
         "name": "Greggs",
         "description": "Cheap tastey food, but you'll be hungry again in an hour",
-        "priceRange": "£",
+        "priceRange": "£"
     },
     {
         "name": "Tapped",
