@@ -1,0 +1,13 @@
+.offer {
+    display: block;
+}
+
+.offer__day {
+    display: inline-block;
+    
+    font-weight: bold;
+}
+
+.offer__text {
+    display: inline-block;
+}

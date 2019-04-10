@@ -45,3 +45,21 @@
 .place__description {
     
 }
+
+.place__offers {
+    margin-top: 16px;
+    display: none;
+}
+
+.place__offers:not(:empty) {
+    display: block;
+}
+
+.place__offers::before {
+    content: "Offers";
+    display: block;
+    margin-bottom: 16px;
+    
+    font-weight: bold;
+    font-size: 125%;
+}

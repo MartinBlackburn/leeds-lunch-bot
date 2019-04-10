@@ -4,7 +4,10 @@ let allPlaces = [
         "description": "Cheap tastey food, but you'll be hungry again in an hour",
         "priceRange": "£",
         "offers": {
-            "monday": "more sausage rolls"
+            "monday": "more sausage rolls",
+            "tuesday": "spicy sausage rolls",
+            "wednesday": "cheesy sausage rolls",
+            "thursday": "more sausage rolls than you can shake a stick at"
         }
     },
     {
@@ -80,10 +83,17 @@ function renderPlaces(places) {
         let priceRangeElement = placeTemplate.querySelector(".place__priceRange");
         let offersElement = placeTemplate.querySelector(".place__offers");
 
-        // set details
+        // set basic details
         nameElement.innerHTML = place.name;
         descriptionElement.innerHTML = place.description;
         priceRangeElement.innerHTML = place.priceRange;
+        
+        // set offers
+        if (place.hasOwnProperty("offers")) {
+            for (let day in place.offers) {
+                offersElement.innerHTML += `<div class="offer"><div class="offer__day">${day}:</div> <div class="offer__text">${place.offers[day]}</div></div>`;
+            }
+        }
         
         // attach the template
         elements.placesList.appendChild(placeTemplate);
