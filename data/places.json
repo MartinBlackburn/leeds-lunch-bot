@@ -26,8 +26,18 @@
         "priceRange": "£"
     },
     {
+        "name": "Poco",
+        "description": "It's a little out of town, but worth the trip if you have a bike with you",
+        "priceRange": "£"
+    },
+    {
+        "name": "Simpatico",
+        "description": "Nice pizza by the slice",
+        "priceRange": "£"
+    },
+    {
         "name": "Tapped",
-        "description": "American-Style Brew Pub.",
+        "description": "American-Style Brew Pub",
         "priceRange": "££",
         "offers": {
             "monday": "Buy One Get One Half Price! On All 7\" & 12\" Pizzas All Day Monday!"
@@ -35,7 +45,7 @@
     },
     {
         "name": "Water Lane Boathouse",
-        "description": "Waterfront bar & beer garden.",
+        "description": "Waterfront bar & beer garden",
         "priceRange": "££",
         "offers": {
             "monday": "50% Off pizza",
