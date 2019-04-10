@@ -1,16 +1,21 @@
 [
     {
-        "name": "Greggs",
-        "description": "Cheap tastey food, but you'll be hungry again in an hour",
-        "priceRange": "£",
-        "offers": {
-            "monday": "more sausage rolls"
-        }
-    },
-    {
         "name": "Blackhouse",
         "description": "Steak! Enough said!",
         "priceRange": "£££"
+    },
+    {
+        "name": "Greggs",
+        "description": "Cheap tastey food, but you'll be hungry again in an hour",
+        "priceRange": "£",
+    },
+    {
+        "name": "Tapped",
+        "description": "American-Style Brew Pub.",
+        "priceRange": "££",
+        "offers": {
+            "monday": "Buy One Get One Half Price! On All 7\" & 12\" Pizzas All Day Monday!"
+        }
     },
     {
         "name": "Water Lane Boathouse",
@@ -22,14 +27,6 @@
             "wednesday": "50% Off everything",
             "thursday": "Two pizzas and a bottle of prosecco or house wine £25",
             "sunday": "50% Off pizza"
-        }
-    },
-    {
-        "name": "Tapped",
-        "description": "American-Style Brew Pub.",
-        "priceRange": "££",
-        "offers": {
-            "monday": "Buy One Get One Half Price! On All 7\" & 12\" Pizzas All Day Monday!"
         }
     }
 ]
