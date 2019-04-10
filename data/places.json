@@ -1,5 +1,13 @@
 [
     {
+        "name": "Almost famous",
+        "description": "Amazing burgers, nom nom",
+        "priceRange": "££",
+        "offers": {
+            "weekdays 12pm - 5pm": "Burger, fries and drink £10"
+        }
+    },
+    {
         "name": "Blackhouse",
         "description": "Steak! Enough said!",
         "priceRange": "£££"
